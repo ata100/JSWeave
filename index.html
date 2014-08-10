@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSweave</title>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <script src="tools.js" defer="defer"></script>
+    <script src="kinetic-v5.0.1.js"></script>
+    <script src="Console.js" defer="defer"></script>
+    <script src="Layout.js" defer="defer"></script>
+    <script src="vars.js" defer="defer"></script>
+    <script src="GUI_fcns.js" defer="defer"></script>
+    <script src="init.js" defer="defer"></script>
+    <script type="text/javascript" src="tinyscrollbar.js"></script>
+    <script src="jquery-ui-1.11.0.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.11.0.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.11.0.custom/jquery-ui.css" />
+</head>
+<body>
+    <div id="cover"></div>
+    <div id="menubar">
+        <nav>
+            <ul>
+                <li><a href="#">File</a>
+                    <ul>
+                        <li><a href="#">Save</a>
+                            <ul>
+                                <li><a href="#" onclick="FileSaveButtonPress()">To file</a></li>
+                                <li><a href="#">To local storage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Load</a><ul>
+                            <li><a href="#" onclick="FileLoadButtonPress()">From file</a></li>
+                            <li><a href="#">From local storage</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Settings</a>
+                    <ul>
+                        <li><a href="#" onclick="PolkusiaButtonPress()">Polkusia</a></li>
+                        <li><a href="#" onclick="VarsiaButtonPress()">Varsia</a></li>
+                        <li><a href="#">V&auml;rit</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Help</a>
+                    <ul>
+                        <li><a href="#">Introduction</a></li>
+                        <li><a href="#" onclick="CommandsButtonPress()">Command list</a></li>
+                        <li><a href="#" onclick="AboutButtonPress()">About</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="main_container">
+        <div id="header">
+            JSWeave
+        </div>
+        <table id="coords">
+            <tr>
+                <td class="coordlabel">X:</td>
+                <td id="xcoord" class="coordslot"></td>
+                <td class="coordlabel">Y:</td>
+                <td id="ycoord" class="coordslot"></td>
+            </tr>
+        </table>
+        <div id="mainarea">
+            <div id="vasen_yla">
+                <div id="vy"></div>
+            </div>
+            <div id="oikea_yla">
+                <div id="oy"></div>
+            </div>
+            <div id="vasen_ala">
+                <div id="va"></div>
+            </div>
+            <div id="oikea_ala">
+                <div id="oa"></div>
+            </div>
+            <div id="pystyscroll">
+                <div class="scrollbar">
+                    <div class="track">
+                        <div class="thumb">
+                            <div class="end"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewport">
+                    <div class="overview" id="pystyover"></div>
+                </div>
+            </div>
+            <div id="vaakascroll">
+                <div class="scrollbar">
+                    <div class="track">
+                        <div class="thumb">
+                            <div class="end"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewport">
+                    <div class="overview" id="vaakaover"></div>
+                </div>
+            </div>
+        </div>
+        <div id="logsection">
+            <div id="logbox">
+            </div>
+            <div id="input">
+                <div id="prompt">&gt; </div>
+                <form id="inputform">
+                    <input type="text" id="textinput" autocomplete="off" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
