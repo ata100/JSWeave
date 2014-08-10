@@ -1,3 +1,5 @@
-﻿1) ctrl+c tms keskeyttää komennon syöttämisen
-
-3) komennon parametreja syötettäessä promptiin aktiviisen komennon nimi.
+﻿-----------------------------------+------------------------------------+
+-loimilanka(warp),kudelanka(weft)  | polkunen(treadle),kudelanka(weft)  |
+-----------------------------------+------------------------------------+
+-loimilanka(warp),niisivarsi(shaft)| polkunen(treadle),niisivarsi(shaft)|
+-----------------------------------+------------------------------------+

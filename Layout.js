@@ -419,7 +419,7 @@ function Model(ltname, rtname, lbname, rbname, vscrollname, hscrollname,
       }
 
       if (isNaN(newwidth) || newwidth < 2 || newwidth > 20) {
-         cmdline.Log('Uusi arvo oikean reunan leveydelle on virheellinen: ' + uusileveys_raw + ' (minimi 2, maksimi 20)', 'error');
+         cmdline.Log('Uusi arvo oikean reunan leveydelle on virheellinen: ' + newwidth_raw + ' (minimi 2, maksimi 20)', 'error');
          return false;
       }
 

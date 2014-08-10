@@ -47,7 +47,8 @@ cmdline.AddCommand('varsia', 'Muuttaa varsien määrän halutuksi', ['Anna varsi
       return;
    }
    model.Hide(function () {
-      if (model.ModelChangeRightWidth(Args[0])) {
+      if (model.ModelChangeBottomHeight(Args[0])) {
+         model.UpdateAll();
          cmdline.Log('Varsien määräksi asetettu ' + Args[0]);
       }
       model.Show();
@@ -59,7 +60,8 @@ cmdline.AddCommand('polkusia', 'Muuttaa polkusten määrän halutuksi', ['Anna p
       return;
    }
    model.Hide(function () {
-      if (model.ModelChangeBottomHeight(Args[0])) {
+      if (model.ModelChangeRightWidth(Args[0])) {
+         model.UpdateAll();
          cmdline.Log('Polkusten määräksi asetettu ' + Args[0]);
       }
       model.Show();
