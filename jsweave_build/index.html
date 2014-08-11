@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSweave</title>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-ui.structure.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-ui.theme.css" />
+    <script src="js/min.js" defer="defer"></script>
+    
+</head>
+<body>
+    <div id="cover"></div>
+    <div id="menubar">
+        <nav>
+            <ul>
+                <li><a href="#" id="filelabel_"></a>
+                    <ul>
+                        <li><a href="#" id="savelabel_"></a>
+                            <ul>
+                                <li><a href="#" onclick="FileSaveButtonPress()" id="tofilelabel_"></a></li>
+                                <li><a href="#" onclick="LSSaveButtonPress()" id="tolslabel_"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="loadlabel_"></a><ul>
+                            <li><a href="#" onclick="FileLoadButtonPress()" id="fromfilelabel_"></a></li>
+                            <li><a href="#" onclick="LSLoadButtonPress()" id="fromlslabel_"></a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" id="settinglabel_"></a>
+                    <ul>
+                        <li><a href="#" onclick="PolkusiaButtonPress()" id="treadlelabel_"></a></li>
+                        <li><a href="#" onclick="VarsiaButtonPress()" id="shaftlabel_"></a></li>
+                        <li><a href="#" onclick="ColorButtonPress()" id="colorlabel_"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#" id="helplabel_"></a>
+                    <ul>
+                        <li><a href="#" onclick="IntroButtonPress()" id="introlabel_"></a></li>
+                        <li><a href="#" onclick="CommandsButtonPress()" id="cmdlistlabel_"></a></li>
+                        <li><a href="#" onclick="AboutButtonPress()" id="aboutlabel_"></a></li>
+                    </ul>
+                </li>
+                <li id="lang"><a href="#">Language</a>
+                    <ul>
+                        <li><a href="#" onclick="cmdline.cmds['lang'].fcn(['eng'])"><img src="images/gb.png" /> English</a></li>
+                        <li><a href="#" onclick="cmdline.cmds['lang'].fcn(['fin'])"><img src="images/fi.png" /> Finnish</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="main_container">
+        <div id="header">
+            JSWeave
+        </div>
+        <table id="coords">
+            <tr>
+                <td class="coordlabel">X:</td>
+                <td id="xcoord" class="coordslot"></td>
+                <td class="coordlabel">Y:</td>
+                <td id="ycoord" class="coordslot"></td>
+            </tr>
+        </table>
+        <div id="mainarea" class="noSelect">
+            <div id="vasen_yla">
+                <div id="vy"></div>
+            </div>
+            <div id="oikea_yla">
+                <div id="oy"></div>
+            </div>
+            <div id="vasen_ala">
+                <div id="va"></div>
+            </div>
+            <div id="oikea_ala">
+                <div id="oa"></div>
+            </div>
+            <div id="pystyscroll">
+                <div class="scrollbar">
+                    <div class="track">
+                        <div class="thumb">
+                            <div class="end"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewport">
+                    <div class="overview" id="pystyover"></div>
+                </div>
+            </div>
+            <div id="vaakascroll">
+                <div class="scrollbar">
+                    <div class="track">
+                        <div class="thumb">
+                            <div class="end"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewport">
+                    <div class="overview" id="vaakaover"></div>
+                </div>
+            </div>
+        </div>
+        <div id="logsection">
+            <div id="logbox">
+            </div>
+            <div id="input">
+                <div id="prompt">&gt; </div>
+                <form id="inputform">
+                    <input type="text" id="textinput" autocomplete="off" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

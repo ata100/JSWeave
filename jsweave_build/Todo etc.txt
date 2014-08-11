@@ -1,0 +1,5 @@
+-----------------------------------+------------------------------------+
+-loimilanka(warp),kudelanka(weft)  | polkunen(treadle),kudelanka(weft)  |
+-----------------------------------+------------------------------------+
+-loimilanka(warp),niisivarsi(shaft)| polkunen(treadle),niisivarsi(shaft)|
+-----------------------------------+------------------------------------+
